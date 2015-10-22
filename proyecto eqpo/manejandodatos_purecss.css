@@ -1,0 +1,77 @@
+var map;
+var ruta = [];
+ 
+$(function(){
+function clear () { ruta = []; localStorage.ruta = JSON.stringify(ruta); };
+ 
+$('#compactar').on('click', function () {
+ruta1 = ruta[0]; ruta2 = ruta[ruta.length - 1];
+ruta = [ruta1, ruta2];
+geolocalizar();
+} );
+$('#limpiar').on('click', function () {
+clear();
+geolocalizar();
+} );
+ 
+function muestra (origen, fin) {
+// muestra ruta entre marcas anteriores y actuales
+map.drawRoute({
+origin: origen,  // origen en coordenadas anteriores
+destination: fin, // destino en coordenadas del click o toque actual
+travelMode: 'driving',
+strokeColor: '#3B9313',
+strokeOpacity: 0.6,
+strokeWeight: 5
+});
+map.addMarker({ lat: fin[0], lng: fin[1]});  // pone marcador en mapa
+map.setCenter( fin[0], fin[1]);
+};
+ 
+function enlazarMarcador(e){
+var lat2 = e.latLng.lat(); var lng2 = e.latLng.lng();  // guarda coords para marca siguiente
+if (ruta.length > 0)
+{ muestra(ruta[ruta.length - 1], [lat2, lng2]) }
+else {
+map.addMarker({ lat: lat2, lng: lng2});  // pone marcador en mapa
+}
+ruta.push([lat2, lng2]);
+// console.log(ruta);
+localStorage.ruta = JSON.stringify(ruta);
+};
+ 
+function geolocalizar(){
+GMaps.geolocate({
+success: function(position){
+var lt, ln;
+if (ruta.length == 0) {
+lt = position.coords.latitude;  // guarda coords en lat y lng
+ln = position.coords.longitude;
+}
+else
+{ lt = ruta[0][0]; ln = ruta[0][1];    }
+map = new GMaps({  // muestra mapa centrado en coords [lat, lng]
+el: '#map',
+lat: lt,
+lng: ln,
+//setZoom: 8,
+click: enlazarMarcador,
+tap: enlazarMarcador
+});
+if (ruta.length > 0) {
+map.addMarker({ lat: ruta[0][0], lng: ruta[0][1]});  // marcador en [lat, lng]
+}
+if (ruta.length > 1) {
+for (i=1; i<ruta.length; i++) { muestra(ruta[i-1], ruta[i]); }
+}
+map.fitZoom();
+},
+error: function(error) { smoke.alert('Error en la Geolocalización: '+error.message); },
+not_supported: function(){ smoke.alert("Su navegador no soporta geolocalización"); },
+});
+};
+ 
+try { ruta = JSON.parse(localStorage.ruta);  // console.log( ruta.length );
+}   catch (e) { console.log("Parsing error:" + e); }
+geolocalizar();
+});
