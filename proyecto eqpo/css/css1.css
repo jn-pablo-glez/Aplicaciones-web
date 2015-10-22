@@ -1,0 +1,185 @@
+﻿BODY 
+{ 
+ 
+}
+/*H1 {
+font-family:arial;
+color:white; 
+
+font-size:22pt; }
+H2 
+{text-align:center; font-family:garamond; color:blue; font-weight:bolder; font-size:18pt; font-style:bold;}
+H3 
+{text-align:center; font-family:arial; color:green; font-weight:bolder; font-size:15pt; font-style:oblique}
+H4 
+{text-align:center; font-family:garamond; color:"FFFFFF"; font-weight:bolder; font-size:12pt; font-style:oblique }
+P 
+{text-align:center; font-family:garamond; color:"FFFFFF"; font-weight:bolder; font-size:11pt; font-style:oblique;}
+/*.vineta1{list-style-image:url('imagen.jpg')}*/
+
+.imagen{
+background-color:#CC5;
+height:150px;
+width:100%;
+float: left;
+
+}
+
+.imgdiv{
+background-color:#CC5;
+height:150px;
+width:20%;
+float: left;
+
+}
+
+
+
+.imagen1{
+
+height:250px;
+width:100%;
+float: left;
+
+}
+
+.imgdiv1{
+
+height:250px;
+width:100%;
+float: left;
+
+}
+
+.imagen2{
+
+height:500px;
+width:100%;
+float: center;
+
+}
+
+.imgdiv2{
+
+height:500px;
+width:100%;
+float: center;
+
+}
+
+
+
+.encabezado1{
+height:100%;
+width:60%;
+float: left;
+
+}
+*{
+margin:0 0 0 0;
+}
+.encabezado{
+/*background-color:#FF6;*/
+height:150px ;
+}
+.derecha{
+float: right;
+height: 690px;
+width:20%;
+/*background-color:lightblue;*/
+}
+.izquierda{
+float:left;
+height: 690px;
+width:20%;
+/*background-color:lightblue;*/
+}
+.cuerpo{
+float: left;
+width: 60%;
+height:690px; 
+
+}
+.pie{
+height:20px;
+}
+/*diseño de la tabla*/
+table {     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+     font-size: 12px;    margin: 45px;      text-align: left;    border-collapse: collapse; }
+
+ th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: #b9c9fe;
+     border-top: 4px solid #aabcfe;    border-bottom: 1px solid #fff; color: #039; }
+
+ td {    padding: 8px;     background: #e8edff;     border-bottom: 1px solid #fff;
+     color: #669;    border-top: 1px solid transparent; }
+
+ tr:hover td { background: #d0dafd; color: #339; }
+ /*menu*/
+ 
+.menu{
+height:50%;
+width:100%;
+
+}
+.menu1{
+height:20%;
+width:10%;
+float:left;
+
+}
+ 
+#button {
+padding: 0;
+}
+#button li {
+display: inline;
+
+}
+
+#button li a {
+font-family: Arial;
+font-size:11px;
+text-decoration: none;
+float:left;
+padding: 30px;
+background-color: #2175bc;
+color: #fff;
+}
+
+#button li a:hover {
+background-color: #2586d7;
+margin-top:-2px;
+padding-bottom:12px ;
+}
+
+.caja{
+background:#f0f0f0;
+width:200px;
+border:2px solid blue;
+margin:auto;
+padding:1em;
+border-radius:6px;
+}
+input[type=text], input[type=password]{
+	background:gray;
+	margin:0 0 1em 0;
+	width:250px;
+	border:3px;
+	padding:1em;
+	border-radius:5px;
+}
+input[type=submit]{
+	padding:1em;
+	background:gray;
+	border:none;
+	color:black;
+	font-family:arial black;
+	font-size:14px;
+	border-radius:3px;
+	text-decoration:none;
+}
+input[type=submit]:hover, form a:hover{
+background:#0080ff;
+cursor:pointer;
+
+}
