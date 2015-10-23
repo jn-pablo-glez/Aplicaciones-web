@@ -5,16 +5,17 @@
 <html class=" js no-touch" lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>HOME - "BOOK-ME"</title>
+    <title>BUSQUEDA - "BOOK-ME"</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your page description here">
     <meta name="author" content="">
+
+ 
     <!-- css -->
     <link href="css/menu.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/css1.css">
 </head>
 <body>
-	<div style="background:#999; font-size:20px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BANNER
+	<div style="background:#999; font-size:15px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BANNER
     </div>
 	<!-- start header -->
 	<header>	
@@ -24,30 +25,28 @@
 						<nav>
 						<ul class="nav topnav bold">
 							<li class="dropdown active">
-							<a href="index.htm">Home</a>
+							<a href="index.php">Home</a>
 							</li>
 							<li class="dropdown">
 							<a href="#">Busqueda <i class="icon-angle-down"></i></a>
 							<ul style="display: none;" class="dropdown-menu bold">
-								<li><a href="Busqueda1.htm">Libro</a></li>
-								<li><a href="Busqueda2.htm">Libreria</a></li>
+								<li><a href="Busqueda1.php">Libro</a></li>
+								<li><a href="Busqueda2.php">Libreria</a></li>
 							</ul>
 							</li>
 							<li class="dropdown">
-							<a href="Foro.htm">Foro</a>
+							<a href="Foro.php">Foro</a>
 							</li>
 							<li class="dropdown">
-							<a href="Contactos.htm">Contactos</a>
+							<a href="Contactos.php">Contactos</a>
 							</li>
 							<li class="dropdown">
 							<a href="#">Inicio de sesion <i class="icon-angle-down"></i></a>
 							<ul style="display: none;" class="dropdown-menu bold">
-								<li><a href="acceso.htm">Iniciar sesion</a></li>
-								<li><a href="registro.htm">Registrarse</a></li>
+								<li><a href="acceso.php">Iniciar sesion</a></li>
+								<li><a href="registro.php">Registrarse</a></li>
 							</ul>
 							</li>
-							
-							
 						</ul>
 						</nav>
 					</div>
@@ -56,23 +55,13 @@
 			</div>
 			</div>
 		</div>
-	</header>	
+	</header>
 	<!-- end header -->
-	<form>
-		<h2 style="text-align:center;" font-family:"arial;">Registro</h2>
-		<p> Nombre :</p>
-		<p><input name="ingresatexto" type="text"/></p>
-		<p>E-mail</p><input email="ingresatexto" type="text"/></p>
-		<p>Ingresa tu contraseña:</p><p> <input name="contrasena" type="password"/></p>
-		<input type="submit" name="boton" value="Resgistrarse"/>
-	</form>
-	<?php
-	$con = mysql_connect("localhost", "root", "") or die(mysql_error());
-	mysql_select_db("libreria", $con) or die(mysql_error());
-	echo "hola";
-	?>
-
 	
+	
+
+
+
 	
     <script src="js/jquery.js"></script>
 	<script src="js/custom.js"></script>

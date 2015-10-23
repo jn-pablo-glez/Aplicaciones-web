@@ -24,26 +24,26 @@
 						<nav>
 						<ul class="nav topnav bold">
 							<li class="dropdown active">
-							<a href="index.htm">Home</a>
+							<a href="index.php">Home</a>
 							</li>
 							<li class="dropdown">
 							<a href="#">Busqueda <i class="icon-angle-down"></i></a>
 							<ul style="display: none;" class="dropdown-menu bold">
-								<li><a href="Busqueda1.htm">Libro</a></li>
-								<li><a href="Busqueda2.htm">Libreria</a></li>
+								<li><a href="Busqueda1.php">Libro</a></li>
+								<li><a href="Busqueda2.php">Libreria</a></li>
 							</ul>
 							</li>
 							<li class="dropdown">
-							<a href="Foro.htm">Foro</a>
+							<a href="Foro.php">Foro</a>
 							</li>
 							<li class="dropdown">
-							<a href="Contactos.htm">Contactos</a>
+							<a href="Contactos.php">Contactos</a>
 							</li>
 							<li class="dropdown">
 							<a href="#">Inicio de sesion <i class="icon-angle-down"></i></a>
 							<ul style="display: none;" class="dropdown-menu bold">
-								<li><a href="acceso.htm">Iniciar sesion</a></li>
-								<li><a href="registro.htm">Registrarse</a></li>
+								<li><a href="acceso.php">Iniciar sesion</a></li>
+								<li><a href="registro.php">Registrarse</a></li>
 							</ul>
 							</li>
 							
@@ -59,19 +59,12 @@
 	</header>	
 	<!-- end header -->
 	<form>
-		<h2 style="text-align:center;" font-family:"arial;">Registro</h2>
-		<p> Nombre :</p>
-		<p><input name="ingresatexto" type="text"/></p>
+		<h2 style="text-align:center;" font-family:"arial;">Iniciar Sesion</h2>
 		<p>E-mail</p><input email="ingresatexto" type="text"/></p>
 		<p>Ingresa tu contraseña:</p><p> <input name="contrasena" type="password"/></p>
-		<input type="submit" name="boton" value="Resgistrarse"/>
+		<input type="submit" name="boton" value="Iniciar sesion"/>
 	</form>
-	<?php
-	$con = mysql_connect("localhost", "root", "") or die(mysql_error());
-	mysql_select_db("libreria", $con) or die(mysql_error());
-	echo "hola";
-	?>
-
+	
 	
 	
     <script src="js/jquery.js"></script>
