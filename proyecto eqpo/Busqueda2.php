@@ -55,10 +55,58 @@
 		</div>
 	</header>
 	<!-- end header -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  
+<script type="text/javascript" src="gmaps.js"></script>
+  
+<script type="text/javascript">
+  
+$(document).ready(function(){
+  	
+var map= new GMaps({
+div: '#map',
+lat: 19.0412967,
+ lng: -98.2061996,
+ zoom: 15
+});
+ });
+  
+</script>
+<form method="POST">
+<input type="text" name="libro">
+<input type="submit" name="Boton" value="Buscar">
+</form>
+<div id="map" style="width:100%;height:500px;">
+</div>
 		
     <script src="js/jquery.js"></script>
 	<script src="js/custom.js"></script>
-
+<?php
+error_reporting(0);
+if ($_REQUEST[Boton] != "" )
+{
+	$con = mysql_connect("localhost", "root", "") or die(mysql_error());
+	mysql_select_db("libreria", $con) or die(mysql_error());
+	$query = "select * from libreria";     
+    $result = mysql_query($query);
+	$libro=$_POST[libro];
+	while($registro=mysql_fetch_array($result))
+	{
+		if($registro['nombre']==$libro)
+		{
+					echo "<script type='text/javascript'>
+					$(document).ready(function()
+					{
+						var map= new GMaps({div: '#map',lat: 19.0412967,lng: -98.2061996,zoom: 14});
+						map.addMarker({lat:'".$registro['lat']."',lng:'".$registro['lon']."', title:'".$registro['nombre']."',infoWindow: {content:'".$registro['direccion']."'}});
+			});</script>";
+		}
+	}
+	mysql_close($con);
+}
+?>
 </body>
 
 </html>
