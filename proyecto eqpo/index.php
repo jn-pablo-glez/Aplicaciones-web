@@ -1,3 +1,7 @@
+<?php
+	session_start();
+	echo "Hola " . $_SESSION['usuario'];
+?>
 <!DOCTYPE html>
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -38,13 +42,14 @@
 							<li class="dropdown">
 							<a href="Contactos.php">Contactos</a>
 							</li>
+							<!--
 							<li class="dropdown">
 							<a href="#">Inicio de sesion <i class="icon-angle-down"></i></a>
 							<ul style="display: none;" class="dropdown-menu bold">
 								<li><a href="acceso.php">Iniciar sesion</a></li>
 								<li><a href="registro.php">Registrarse</a></li>
 							</ul>
-							</li>
+							</li>-->
 							
 							
 						</ul>
@@ -60,6 +65,7 @@
 	<img id="pub" alt="no carga" src="img1.png">
     <script src="js/jquery.js"></script>
 	<script src="js/custom.js"></script>
+	<a href="logout.php"><button>Salir</button></a>
 
 </body>
 

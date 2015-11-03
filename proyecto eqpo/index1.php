@@ -11,10 +11,9 @@
     <meta name="author" content="">
     <!-- css -->
     <link href="css/menu.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/css1.css">
 </head>
 <body>
-	<div style="background:#999; font-size:20px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BANNER
+	<div style="background:#999; font-size:50px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BOOK-ME
     </div>
 	<!-- start header -->
 	<header>	
@@ -58,15 +57,7 @@
 		</div>
 	</header>	
 	<!-- end header -->
-	<form method='POST' action='login.php'>
-		<h2 style="text-align:center;">Iniciar Sesion</h2>
-		<p>Nombre</p><input name="usuario" type="text"/></p>
-		<p>Ingresa tu contraseña:</p><p> <input name="cont" type="password"/></p>
-		<input type="submit" name="boton" value="Iniciar sesion"/>
-	</form>
-	
-	
-	
+	<img id="pub" alt="no carga" src="img1.png">
     <script src="js/jquery.js"></script>
 	<script src="js/custom.js"></script>
 
