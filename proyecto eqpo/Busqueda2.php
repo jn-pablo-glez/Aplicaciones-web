@@ -11,9 +11,10 @@
     <meta name="author" content="">
     <!-- css -->
     <link href="css/menu.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/css1.css">
 </head>
 <body>
-	<div style="background:#999; font-size:15px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BANNER
+	<div style="background:#999; font-size:50px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BOOK-ME
     </div>
 	<!-- start header -->
 	<header>	
@@ -36,15 +37,18 @@
 							<a href="Foro.php">Foro</a>
 							</li>
 							<li class="dropdown">
-							<a href="Contactos.php">Contactos</a>
+							<a href="Contactos.php">Contacto</a>
 							</li>
 							<li class="dropdown">
+							<a href="logout.php">Cerrar sesion</a>
+							</li>
+							<!--<li class="dropdown">
 							<a href="#">Inicio de sesion <i class="icon-angle-down"></i></a>
 							<ul style="display: none;" class="dropdown-menu bold">
 								<li><a href="acceso.php">Iniciar sesion</a></li>
 								<li><a href="registro.php">Registrarse</a></li>
 							</ul>
-							</li>
+							</li>-->
 						</ul>
 						</nav>
 					</div>
@@ -74,10 +78,12 @@ lat: 19.0412967,
  });
   
 </script>
-<form method="POST">
-<input type="text" name="libro">
-<input type="submit" name="Boton" value="Buscar">
-</form>
+<div id='caja' class='caja'>
+	<form method="POST">
+		Nombre de libro:<input type="text" name="libro">
+		<input type="submit" name="Boton" value="Buscar">
+	</form>
+</div>
 <div id="map" style="width:100%;height:500px;">
 </div>
 		

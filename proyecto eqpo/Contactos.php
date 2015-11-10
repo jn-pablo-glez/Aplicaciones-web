@@ -11,9 +11,10 @@
     <meta name="author" content="">
     <!-- css -->
     <link href="css/menu.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/css1.css">
 </head>
 <body>
-	<div style="background:#999; font-size:15px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BANNER
+	<div style="background:#999; font-size:50px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BOOK-ME
     </div>
 	<!-- start header -->
 	<header>	
@@ -39,12 +40,15 @@
 							<a href="Contactos.php">Contactos</a>
 							</li>
 							<li class="dropdown">
+							<a href="logout.php">Cerrar sesion</a>
+							</li>
+							<!--<li class="dropdown">
 							<a href="#">Inicio de sesion <i class="icon-angle-down"></i></a>
 							<ul style="display: none;" class="dropdown-menu bold">
 								<li><a href="acceso.php">Iniciar sesion</a></li>
 								<li><a href="registro.php">Registrarse</a></li>
 							</ul>
-							</li>
+							</li>-->
 						</ul>
 						</nav>
 					</div>
@@ -58,6 +62,20 @@
 		
     <script src="js/jquery.js"></script>
 	<script src="js/custom.js"></script>
+	<div id='caja' class='caja'>
+		<h2>Facultad de Ciencias de la Computaciòn</h2>
+		<h3>
+				<li>
+					Materia: Aplicaciones Web
+					<li>Curso: Otoño 2015
+					<li>Profe: Mario Anzures
+					<li>Alumnos:<p>
+					Erick Alfredo Portilla Sanchez<p>
+					Juan Pablo Gonzalez Morales
+					
+			</li>
+		</h3>
+	</div>
 
 </body>
 

@@ -57,9 +57,12 @@
 		</div>
 	</header>	
 	<!-- end header -->
-	<img id="pub" alt="no carga" src="img1.png">
+	
     <script src="js/jquery.js"></script>
 	<script src="js/custom.js"></script>
+	<div>
+		<IMG src="imagen1.jpg" WIDTH=auto HEIGHT=auto ><IMG src="buap.png" WIDTH=500 HEIGHT=auto >
+	</div>
 
 </body>
 

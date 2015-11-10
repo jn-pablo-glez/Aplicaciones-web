@@ -13,7 +13,7 @@
     <link href="css/menu.css" rel="stylesheet">
 </head>
 <body>
-	<div style="background:#999; font-size:15px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BANNER
+	<div style="background:#999; font-size:15px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BOOK-ME
     </div>
 	<!-- start header -->
 	<header>	
@@ -39,12 +39,15 @@
 							<a href="Contactos.php">Contactos</a>
 							</li>
 							<li class="dropdown">
+							<a href="logout.php">Cerrar sesion</a>
+							</li>
+							<!--<li class="dropdown">
 							<a href="#">Inicio de sesion <i class="icon-angle-down"></i></a>
 							<ul style="display: none;" class="dropdown-menu bold">
 								<li><a href="acceso.php">Iniciar sesion</a></li>
 								<li><a href="registro.php">Registrarse</a></li>
 							</ul>
-							</li>
+							</li>-->
 						</ul>
 						</nav>
 					</div>

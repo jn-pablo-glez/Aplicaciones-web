@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/css1.css">
 </head>
 <body>
-	<div style="background:#999; font-size:20px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BANNER
+	<div style="background:#999; font-size:20px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BOOK-ME
     </div>
 	<!-- start header -->
 	<header>	
@@ -58,13 +58,15 @@
 		</div>
 	</header>	
 	<!-- end header -->
+	
+	<div id='caja1' class='caja1'>
 	<form method='POST' action='login.php'>
 		<h2 style="text-align:center;">Iniciar Sesion</h2>
 		<p>Nombre</p><input name="usuario" type="text"/></p>
 		<p>Ingresa tu contraseña:</p><p> <input name="cont" type="password"/></p>
 		<input type="submit" name="boton" value="Iniciar sesion"/>
 	</form>
-	
+	</div>
 	
 	
     <script src="js/jquery.js"></script>

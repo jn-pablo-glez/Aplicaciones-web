@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="css/css1.css">
 </head>
 <body>
-	<div style="background:#999; font-size:20px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BANNER
+	<div style="background:#999; font-size:20px; text-align:center; line-height:160px; color:#FFF; font-weight:bold;">BOOK-ME
     </div>
 	<!-- start header -->
 	<header>	
@@ -58,6 +58,7 @@
 		</div>
 	</header>	
 	<!-- end header -->
+	<div id='caja1' class='caja1'>
 	<form method="POST" action='alta.php'>
 		<h2 style="text-align:center;" >Registro</h2>
 		
@@ -67,8 +68,10 @@
 		<p>
 		<input type="submit" name="boton" value="Resgistrarse"/>
 	</form>
+	</div>
+	<!--
 	<?php
-	error_reporting(0);
+	/*error_reporting(0);
 	$con = mysql_connect("localhost", "root", "") or die(mysql_error());
 	mysql_select_db("libreria", $con) or die(mysql_error());
 	$nombre=$_POST["nombre"];
@@ -76,8 +79,9 @@
 	$contraseña=$_POST["contrasena"];
 	$sql = "INSERT INTO usuarios VALUES(NULL,'$nombre','$correo','$contraseña')";
 	mysql_query($sql);
-	mysql_close($con);
+	mysql_close($con);*/
 	?>
+	-->
 
 	
 	

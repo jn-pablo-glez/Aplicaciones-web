@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	echo "Hola " . $_SESSION['usuario'];
+	//<a href="logout.php"><button>Salir</button></a>
 ?>
 <!DOCTYPE html>
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -42,6 +43,10 @@
 							<li class="dropdown">
 							<a href="Contactos.php">Contactos</a>
 							</li>
+							</li>
+							<li class="dropdown">
+							<a href="logout.php">Cerrar sesion</a>
+							</li>
 							<!--
 							<li class="dropdown">
 							<a href="#">Inicio de sesion <i class="icon-angle-down"></i></a>
@@ -62,11 +67,13 @@
 		</div>
 	</header>	
 	<!-- end header -->
-	<img id="pub" alt="no carga" src="img1.png">
+	<!--<img id="pub" alt="no carga" src="img1.png">-->
     <script src="js/jquery.js"></script>
 	<script src="js/custom.js"></script>
-	<a href="logout.php"><button>Salir</button></a>
-
+<!--	<a href="logout.php"><button>Salir</button></a> -->
+	<div>
+		<IMG src="imagen1.jpg" WIDTH=auto HEIGHT=auto ><IMG src="buap.png" WIDTH=500 HEIGHT=auto >
+	</div>
 </body>
 
 </html>
